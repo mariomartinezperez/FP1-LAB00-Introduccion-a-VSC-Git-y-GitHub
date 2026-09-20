@@ -1,0 +1,10 @@
+nombre = input("introduce tu nombre")
+from datetime import datetime
+
+hora_actual = datetime.now().hour
+if hora_actual < 12:
+    print(f"Buenos días, {nombre}")
+elif 12 <= hora_actual <= 20:
+    print(f"Buenas tardes, {nombre}")
+else: 
+    print(f"Buenas noches, {nombre}")
